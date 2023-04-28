@@ -11,3 +11,237 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed; */
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.header {
+  color: white;
+}
+
+.delivery {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex: 3;
+  margin-right: 10px;
+}
+
+.categories-and-cart {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.096);
+  /* position: fixed;
+  width: 100%; */
+}
+
+
+
+
+
+
+.dishes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.dish {
+padding: 10px;
+margin: 20px 5px 20px 5px;
+}
+
+.dish-picture {
+  width: 300px;
+  height: 200px;
+}
+
+.categories {
+  display: flex;
+  /* justify-content: space-evenly;
+  flex-wrap: wrap; */
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.category {
+  background-color: #a42a15;
+  width: 170px;
+  margin: 0 10px 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: #6b1e11;
+}
+
+.categoryButtonSelected {
+  background-color: #156338;
+  width: 170px;
+  margin: 0 10px 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+}
+
+.quantity {
+  display: flex;
+  border: 1px solid black;
+  width: 80px;
+  height: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cartBtn {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.btnAdd, .btnRemove {
+  cursor: pointer;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dishName {
+  font-weight: bold;
+  width: 200px;
+  text-align: start;
+  margin-left: 10px;
+
+}
+
+.dishQuantity {
+  width: 50px;
+}
+
+.dishPrice {
+  width: 80px;
+}
+
+.totalPrice {
+  margin-top: 0;
+}
+
+.deleteItem {
+  width: 20px;
+  height: 20px;
+}
+
+.deleteItemSpan {
+  align-self: center;
+  margin-top: 5px;
+}
+
+@media all and (max-width: 650px) {
+  .cartItem {
+    font-size: 13px;
+  }
+
+  .dishName {
+    width: 120px;
+  }
+
+  .dishQuantity {
+    width: 30px;
+  }
+  
+  .dishPrice {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+
+  .header {
+    font-size: 20px;
+  }
+
+  .delivery {
+    font-size: 15px;
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .header-container {
+    align-self: center;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .delivery {
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  .categories-and-cart {
+    flex-direction: column;
+  }
+
+  .category, .categoryButtonSelected {
+    width: 100vw;
+    height: 30px;
+    margin: 0 0 0 0;
+    font-size: 13px;
+    padding: 0 0 10px 0;
+  }
+
+  .cartItem {
+    font-size: 12px;
+  }
+
+  .dishName {
+    width: 150px;
+  }
+
+  .dishPrice {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .dish-picture {
+    width: 200px;
+    height: 140px;
+  }
+}
