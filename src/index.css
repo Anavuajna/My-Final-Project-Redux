@@ -51,11 +51,6 @@ code {
   width: 100%; */
 }
 
-
-
-
-
-
 .dishes {
   display: flex;
   justify-content: space-evenly;
@@ -75,8 +70,6 @@ margin: 20px 5px 20px 5px;
 
 .categories {
   display: flex;
-  /* justify-content: space-evenly;
-  flex-wrap: wrap; */
   flex-direction: column;
   padding-right: 50px;
 }
@@ -122,6 +115,7 @@ margin: 20px 5px 20px 5px;
   border: 1px solid black;
   padding: 10px 10px 20px 10px;
   cursor: pointer;
+  color: black;
 }
 
 .btnAdd, .btnRemove {
@@ -169,7 +163,7 @@ margin: 20px 5px 20px 5px;
   }
 
   .dishName {
-    width: 120px;
+    width: 130px;
   }
 
   .dishQuantity {
@@ -177,7 +171,7 @@ margin: 20px 5px 20px 5px;
   }
   
   .dishPrice {
-    width: 50px;
+    width: 60px;
     margin-left: 10px;
   }
 
